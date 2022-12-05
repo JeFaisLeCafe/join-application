@@ -1,11 +1,11 @@
 import { useState } from "react";
 import easypost from "../utils/easypost";
 
-const usePostCredentials = ({ username, password }) => {
+const usePostCredentials = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState(null);
 
-  async function postCredentials() {
+  async function postCredentials({ username, password }) {
     try {
       const response = await easypost("/login", { username, password });
       if (!response.error) {

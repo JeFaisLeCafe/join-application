@@ -1,14 +1,21 @@
 # Pierre-Etienne Soury Application for Join
 
-To start the project, you first should populate the DB:
+To start the project, you have to install dependencies:
 
 ```sh
-node ./backend/seed.js
+cd frontend && npm i
+cd backend && npm i
 ```
 
-Then you can simply build the image and run it:
+Then you can build the image and run it:
 
 ```sh
 docker-compose build
 docker-compose up
+```
+
+Finally you have to populate the DB:
+
+```sh
+node ./backend/seed.js
 ```

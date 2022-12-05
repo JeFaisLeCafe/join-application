@@ -39,7 +39,7 @@ const Login = () => {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    await postCredentials();
+    await postCredentials({ username, password });
 
     if (!error) {
       navigate("/channels");

@@ -9,7 +9,7 @@ const Home = () => {
       <Title>Servers</Title>
 
       {servers?.map((server) => {
-        return <ServerCard key={server.id} server={server} />;
+        return <ServerCard key={server._id} server={server} />;
       })}
 
       {error && <ErrorMessage>{error}</ErrorMessage>}

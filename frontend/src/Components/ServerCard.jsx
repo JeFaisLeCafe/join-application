@@ -20,7 +20,7 @@ const ServerCard = ({ server }) => {
     navigate(`/channels/${server.name}`, { server });
   }
   return (
-    <CardDiv key={server.id} onClick={handleClick}>
+    <CardDiv onClick={handleClick}>
       <p style={{ color: "white", fontSize: "25px" }}>{server.name}</p>;
     </CardDiv>
   );
